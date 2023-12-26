@@ -6,8 +6,8 @@ const app = express();
 const port = process.env.PORT || 5000;
 require("dotenv").config();
 
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
 
 function verify(req, res, next) {
